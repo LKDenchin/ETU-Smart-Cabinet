@@ -8,9 +8,9 @@
 
 <table>
   <tr>
+    <td align="center"><b>移动端 - 个人中心</b></td>
     <td align="center"><b>移动端 - 首页</b></td>
-    <td align="center"><b>移动端 - 柜子详情</b></td>
-    <td align="center"><b>移动端 - 取件</b></td>
+    <td align="center"><b>移动端 - 选择智能柜</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/app-home.jpg" width="240"/></td>
