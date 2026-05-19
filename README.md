@@ -18,9 +18,9 @@
     <td><img src="screenshots/app-pickup.jpg" width="240"/></td>
   </tr>
   <tr>
-    <td align="center"><b>管理后台 - 数据看板</b></td>
+    <td align="center"><b>移动端 - 社区</b></td>
     <td align="center"><b>管理后台 - 总览</b></td>
-    <td align="center"><b>管理后台 - 柜子管理</b></td>
+    <td align="center"><b>移动端 - 订单</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/admin-dashboard.jpg" width="360"/></td>
