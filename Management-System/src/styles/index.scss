@@ -1,0 +1,274 @@
+// =============================================
+// Minimal Flat Design System - Admin Panel
+// Inspired by modern minimal UI (Notion/Linear style)
+// =============================================
+
+// CSS Variables - Minimal Flat Design Tokens
+:root {
+  // Background colors
+  --bg-primary: #F7F8FA;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F2F3F5;
+  
+  // Sidebar colors
+  --sidebar-bg: #FFFFFF;
+  --sidebar-hover: rgba(0, 0, 0, 0.04);
+  --sidebar-active: #186DF5;
+  --sidebar-border: #EBECF0;
+  --sidebar-text: rgba(0, 0, 0, 0.6);
+  --sidebar-text-active: #FFFFFF;
+  
+  // Primary color
+  --primary: #186DF5;
+  --primary-hover: #1558D6;
+  --primary-active: #0E42A8;
+  --primary-light: rgba(24, 109, 245, 0.08);
+  
+  // Semantic colors
+  --success: #34C759;
+  --success-light: rgba(52, 199, 89, 0.1);
+  --warning: #FF9500;
+  --warning-light: rgba(255, 149, 0, 0.1);
+  --danger: #FF3B30;
+  --danger-light: rgba(255, 59, 48, 0.1);
+  --info: #5AC8FA;
+  --info-light: rgba(90, 200, 250, 0.1);
+  
+  // Text colors
+  --text-primary: rgba(0, 0, 0, 0.85);
+  --text-secondary: rgba(0, 0, 0, 0.55);
+  --text-tertiary: rgba(0, 0, 0, 0.35);
+  
+  // Borders and separators
+  --separator: #EBECF0;
+  --separator-strong: #E0E1E6;
+  
+  // Border radius - Small and minimal
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
+  --radius-2xl: 10px;
+  
+  // Transitions - Fast and snappy
+  --transition-fast: 0.12s ease;
+  --transition-normal: 0.2s ease;
+}
+
+// Global reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// =============================================
+// Component Styles
+// =============================================
+
+// Page container - Simple white card
+.page-container {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid var(--separator);
+}
+
+// Page header
+.page-header {
+  margin-bottom: 20px;
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.01em;
+    
+    .el-icon {
+      color: var(--primary);
+    }
+  }
+  
+  p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+}
+
+// Search bar - Simple flat design
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+// Stat cards - Flat white cards
+.stat-card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1px solid var(--separator);
+  transition: all var(--transition-fast);
+  
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+}
+
+// Tables - Clean flat design
+.el-table {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--separator);
+  
+  th {
+    background: var(--bg-tertiary) !important;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  
+  tr:hover > td {
+    background: var(--primary-light) !important;
+  }
+}
+
+// Tags - Flat design
+.el-tag {
+  border: none !important;
+  font-weight: 500;
+  
+  &--primary {
+    background: var(--primary-light) !important;
+    color: var(--primary) !important;
+  }
+  
+  &--success {
+    background: var(--success-light) !important;
+    color: var(--success) !important;
+  }
+  
+  &--warning {
+    background: var(--warning-light) !important;
+    color: var(--warning) !important;
+  }
+  
+  &--danger {
+    background: var(--danger-light) !important;
+    color: var(--danger) !important;
+  }
+  
+  &--info {
+    background: var(--info-light) !important;
+    color: var(--info) !important;
+  }
+}
+
+// Buttons
+.el-button--primary {
+  background: var(--primary);
+  border: none;
+  
+  &:hover {
+    background: var(--primary-hover);
+  }
+  
+  &:active {
+    background: var(--primary-active);
+  }
+}
+
+.el-button--link {
+  color: var(--primary);
+  
+  &:hover {
+    color: var(--primary-hover);
+  }
+}
+
+// Pagination
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+// Transitions - Simple and fast
+.fade-enter-active,
+.fade-leave-active {
+  transition: all var(--transition-normal);
+}
+
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Scrollbar - Minimal
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Element Plus overrides
+.el-input__wrapper {
+  background: var(--bg-secondary) !important;
+  box-shadow: 0 0 0 1px var(--separator) !important;
+  border-radius: var(--radius-md) !important;
+  
+  &:hover {
+    box-shadow: 0 0 0 1px var(--primary) !important;
+  }
+  
+  &.is-focus {
+    box-shadow: 0 0 0 2px var(--primary) !important;
+  }
+}
+
+.el-dialog {
+  background: var(--bg-secondary) !important;
+  border-radius: var(--radius-xl) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.el-card {
+  background: var(--bg-secondary) !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--separator) !important;
+}
