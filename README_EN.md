@@ -8,9 +8,9 @@ An IoT-based smart cabinet storage and retrieval system featuring NFC tap-to-pic
 
 <table>
   <tr>
+    <td align="center"><b>Mobile - User Center</b></td>
     <td align="center"><b>Mobile - Home</b></td>
     <td align="center"><b>Mobile - Cabinet Detail</b></td>
-    <td align="center"><b>Mobile - Pickup</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/app-home.jpg" width="240"/></td>
