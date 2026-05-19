@@ -1,4 +1,4 @@
-# YiQuBao - Smart Cabinet Management System
+# Easy to Use - Smart Cabinet Management System
 
 English | [中文](README.md)
 
