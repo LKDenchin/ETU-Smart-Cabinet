@@ -34,7 +34,7 @@
 扫描以下小程序码体验完整功能：
 
 <p align="center">
-  <img src="screenshots/微信图片_20260520014149_18_19.jpg" width="200"/>
+  <img src="screenshots/uniapp.jpg" width="200"/>
 </p>
 
 ## 系统架构
