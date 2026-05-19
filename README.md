@@ -19,13 +19,13 @@
   </tr>
   <tr>
     <td align="center"><b>管理后台 - 数据看板</b></td>
+    <td align="center"><b>管理后台 - 总览</b></td>
     <td align="center"><b>管理后台 - 柜子管理</b></td>
-    <td></td>
   </tr>
   <tr>
     <td><img src="screenshots/admin-dashboard.jpg" width="360"/></td>
+    <td><img src="screenshots/admin-overview.png" width="360"/></td>
     <td><img src="screenshots/admin-cabinets.jpg" width="360"/></td>
-    <td></td>
   </tr>
 </table>
 

@@ -19,13 +19,13 @@ An IoT-based smart cabinet storage and retrieval system featuring NFC tap-to-pic
   </tr>
   <tr>
     <td align="center"><b>Admin - Dashboard</b></td>
+    <td align="center"><b>Admin - Overview</b></td>
     <td align="center"><b>Admin - Cabinet Management</b></td>
-    <td></td>
   </tr>
   <tr>
     <td><img src="screenshots/admin-dashboard.jpg" width="360"/></td>
+    <td><img src="screenshots/admin-overview.png" width="360"/></td>
     <td><img src="screenshots/admin-cabinets.jpg" width="360"/></td>
-    <td></td>
   </tr>
 </table>
 
